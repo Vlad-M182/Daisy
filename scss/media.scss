@@ -1,0 +1,118 @@
+@media(max-width: 1919px) {
+	.header {
+	
+		&__mouse {
+			img {
+				display: none;
+			}
+		}
+		&__mouse-wire {
+			display: none;
+		}
+	}
+}
+
+@media(max-width: 996px) {
+	.header {
+		&__title {
+			font-size: 45px;
+		}
+		&__title::before, &__title::after {
+			display: none;
+		}
+	}
+}
+
+@media(min-width: 721px) {
+	.nav__button {
+		display: none;
+	}
+}
+
+@media(max-width: 720px) {
+	.header {
+		&__title {
+			font-size: 30px;
+		}
+		&__subtitle {
+		font-size: 16px;
+		}
+		&__button {
+		font-size: 16px;
+		padding: 12px 37px;
+		cursor: none;
+
+			&:hover {
+				display: none;
+			}
+		}
+	}
+
+	.active {
+		top: 0;
+	}
+
+	.nav {
+		position: absolute;
+		left: 0;
+		top: -200%;
+		z-index: 10;
+		width: 100vw;
+		height: 100vh;
+		background-color: #fc635e;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__burger {
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+
+		&__button {
+			background: transparent;
+			display: block;
+			color: #fff;
+			width: 64px;
+			height: 64px;
+			margin-right: 20px;
+			position: relative;
+			z-index: 12;
+		}
+
+		&__link {
+			margin: 15px 0;
+			font-size: 20px;
+			line-height: 26px;
+			position: relative;
+			z-index: 2;
+
+			&:hover {
+				display: none;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.team {
+		
+		&__title {
+			margin-bottom: 30px;
+		}
+		
+		&__item {
+			width: 100%;
+			margin-bottom: 30px;
+			
+			&:last-child {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}

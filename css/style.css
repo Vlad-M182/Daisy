@@ -764,7 +764,7 @@ html, body {
 
 .portfolio {
   position: relative;
-  height: 100vh;
+  min-height: 700px;
 }
 .portfolio__title {
   display: inline-block;
@@ -867,7 +867,7 @@ html, body {
 
 .team {
   position: relative;
-  min-height: 500px;
+  min-height: 550px;
   background-color: #F2F2F2;
 }
 .team__title {
@@ -962,9 +962,10 @@ html, body {
 .testimonials__header {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .testimonials .card {
-  height: 185px;
+  height: auto;
   width: 790px;
   color: #111111;
   font-size: 16px;
@@ -1028,10 +1029,6 @@ html, body {
   color: #818181;
 }
 
-.slider-container {
-  padding: 100px 0;
-}
-
 .swiper-container {
   width: 90%;
   margin-bottom: 52px;
@@ -1075,7 +1072,7 @@ html, body {
 .map__top {
   display: flex;
   justify-content: center;
-  transform: translateY(50%);
+  margin-bottom: -121px;
 }
 .map__item {
   position: relative;
